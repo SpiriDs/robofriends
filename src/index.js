@@ -9,7 +9,7 @@ import "tachyons";
 import App from "./containers/App";
 import { searchRobots } from "./reducers";
 
-const logger = createLogger;
+const logger = createLogger();
 const store = createStore(searchRobots, applyMiddleware(logger));
 
 ReactDOM.render(
